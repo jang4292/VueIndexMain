@@ -1,7 +1,9 @@
 <template>
 <div>
     <b-navbar id ="navigation_bar" toggleable="lg" type="dark" variant="dark">
-        <b-navbar-brand >{{title}}</b-navbar-brand>
+        <b-navbar-brand  tag="h1" class="mb-0">
+            <i class="fas fa-laptop"></i> {{title}}
+        </b-navbar-brand>
         
         <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
