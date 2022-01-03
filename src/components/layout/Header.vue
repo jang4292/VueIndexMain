@@ -4,13 +4,18 @@
         <b-navbar-brand  tag="h1" class="mb-0">
             <i class="fas fa-laptop"></i> {{title}}
         </b-navbar-brand>
+
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         
         <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
                 <b-nav-item :key="index" v-for="(data,index) in menus" v-bind:href = data.url>{{data.title}}</b-nav-item>
             </b-navbar-nav>
+            <b-navbar-nav >
+                <b-button variant="outline-light" right>LOGIN</b-button>
+            </b-navbar-nav>
         </b-collapse>
-  </b-navbar>
+    </b-navbar>
 </div>
 </template>
 
