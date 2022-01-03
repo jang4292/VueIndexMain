@@ -11,6 +11,7 @@
             <b-navbar-nav>
                 <b-nav-item :key="index" v-for="(data,index) in menus" v-bind:href = data.url>{{data.title}}</b-nav-item>
             </b-navbar-nav>
+            <v-spacer></v-spacer>
             <b-navbar-nav >
                 <b-button variant="outline-light" router-link to="login">LOGIN</b-button>
             </b-navbar-nav>
