@@ -12,8 +12,12 @@
                 <b-nav-item :key="index" v-for="(data,index) in menus" v-bind:href = data.url>{{data.title}}</b-nav-item>
             </b-navbar-nav>
             <v-spacer></v-spacer>
+            <v-btn dark elevation="2" @click="onClickRedirect()">Legacy Home</v-btn>
             <b-navbar-nav >
-                <b-button variant="outline-light" router-link to="login">LOGIN</b-button>
+                <b-button variant="outline-light" router-link to="signin">SIGN IN</b-button>
+            </b-navbar-nav>
+            <b-navbar-nav >
+                <b-button variant="outline-light" router-link to="signup">SIGN UP</b-button>
             </b-navbar-nav>
         </b-collapse>
     </b-navbar>
@@ -27,6 +31,11 @@ export default {
         return {
             title : "개발자의놀이터",
             menus : []
+        }
+    },
+    methods: { 
+        onClickRedirect() { 
+            window.open("http://yhjang1.shop:3001/", "_blank");    
         }
     },
     created() { 
