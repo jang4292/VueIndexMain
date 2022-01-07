@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire">
-    <v-content>
+    <v-main>
       <v-container fluid fill-height>
         <v-layout align-center justify-center>
           <v-flex xs12 sm8 >
@@ -10,10 +10,10 @@
               </v-toolbar>
               <v-card-text>
                 <v-form>
-                  <v-text-field name="Name" label="Name" type="text" v-model="name"></v-text-field>
-                  <v-text-field name="Email" label="Email" type="text" v-model="email"></v-text-field>
-                  <v-text-field id="Password" name="Password" label="Password" type="password" v-model="pw"></v-text-field>
-                  <v-text-field id="RE-Password" name="PasswordCheck" label="Check Password" type="password" v-model="checkPw"></v-text-field>
+                  <v-text-field name="Name" label="Name" type="text" v-model="name" autocomplete="username"></v-text-field>
+                  <v-text-field name="Email" label="Email" type="text" v-model="email" autocomplete="email"></v-text-field>
+                  <v-text-field id="Password" name="Password" label="Password" type="password" v-model="pw" autocomplete="new-password"></v-text-field>
+                  <v-text-field id="RE-Password" name="PasswordCheck" label="Check Password" type="password" v-model="checkPw" autocomplete="new-password"></v-text-field>
                 </v-form>
               </v-card-text>
               <v-card-actions>
@@ -24,7 +24,7 @@
           </v-flex>
         </v-layout>
       </v-container>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
