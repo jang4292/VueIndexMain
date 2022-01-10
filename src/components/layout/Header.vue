@@ -9,7 +9,7 @@
         
         <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-                <b-nav-item :key="index" v-for="(data,index) in menus" v-bind:href = data.url>{{data.title}}</b-nav-item>
+                <b-nav-item :to="{path:`${data.url}`}" :key="index" v-for="(data,index) in menus">{{data.title}}</b-nav-item>
             </b-navbar-nav>
             <v-spacer></v-spacer>
             <v-btn dark elevation="2" @click="onClickRedirect()">Legacy Home</v-btn>
