@@ -1,5 +1,7 @@
 # VueIndexMain
 
+## url-domain : blog.yhjang1.shop
+
 ## Project setup
 ```
 npm install
